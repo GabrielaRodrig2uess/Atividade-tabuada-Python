@@ -1,0 +1,37 @@
+5569
+# ==========================================
+# PARTE A - TABUADA
+# ==========================================
+
+print("===== TABUADA =====")
+
+numero = int(input("Digite um número: "))
+
+for i in range(1, 11):
+    print(numero, "x", i, "=", numero * i)
+
+
+# ==========================================
+# PARTE B - SENHA
+# ==========================================
+
+print("\n===== SENHA =====")
+
+senha_correta = "31445"
+tentativas = 0
+
+while tentativas < 3:
+    senha = input("Digite a senha: ")
+    tentativas = tentativas + 1
+
+    if senha == senha_correta:
+        print("Senha correta! Acesso liberado.")
+        break
+
+    else:
+        print("Senha incorreta.")
+
+    if tentativas == 3:
+        print("Acesso bloqueado! Você excedeu o limite de tentativas.")
+
+print("Programa encerrado.")
